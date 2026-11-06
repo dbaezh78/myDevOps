@@ -7,7 +7,7 @@ echo "=========================================="
 echo " Repositorio: $REPO_NAME"
 echo "=========================================="
 
-git add .
+git add /DevOps/
 read -p "Introduce el mensaje del commit: " mensaje
 git commit -m "$mensaje"
 git push
