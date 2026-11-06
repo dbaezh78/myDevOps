@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
-# Obtiene la ruta raíz del repositorio y extrae solo el nombre de la carpeta
-REPO_NAME=$(basename "$(git rev-parse --show-toplevel 2>/dev/null)")
+# Extrae el nombre del repo de la URL remota (ej: myDevOps.git -> myDevOps)
+REPO_NAME=$(basename -s .git "$(git remote get-url origin 2>/dev/null)")
 
 echo "=========================================="
 echo " Repositorio: $REPO_NAME"
