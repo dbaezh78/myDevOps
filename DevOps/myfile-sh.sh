@@ -10,4 +10,6 @@ echo "=========================================="
 git add /DevOps/
 read -p "Introduce el mensaje del commit: " mensaje
 git commit -m "$mensaje"
-git push
+
+git push -u origin /DevOps
+git push -u origin dev-python
